@@ -21,7 +21,7 @@
 */
 #ifndef PARAM_H
 #define PARAM_H
-#if !defined(PRESET) || !(defined(INDEX) && defined(BLOCK_LENGTH) &&           \
+#if !defined(PRESET) && !(defined(INDEX) && defined(BLOCK_LENGTH) &&           \
                           defined(BLOCK_WEIGHT) && defined(ERROR_WEIGHT))
 #define PRESET 256
 #endif
