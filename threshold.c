@@ -21,8 +21,8 @@
 */
 #include <math.h>
 
-#include "threshold.h"
 #include "param.h"
+#include "threshold.h"
 
 static double lnbino(unsigned n, unsigned t);
 static double xlny(double x, double y);
