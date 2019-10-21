@@ -319,5 +319,5 @@ int qcmdpc_decode_ttl(decoder_t dec, int max_iter) {
     }
 
     // return (!dec->error_weight);
-    return (!dec->syndrome_weight);
+    return (dec->syndrome_weight == SYNDROME_STOP);
 }
