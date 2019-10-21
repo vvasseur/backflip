@@ -51,7 +51,7 @@
 #define BLOCK_LENGTH 11027
 #endif
 #ifndef ERROR_WEIGHT
-#define ERROR_WEIGHT 156
+#define ERROR_WEIGHT 154
 #endif
 #ifndef BLOCK_WEIGHT
 #define BLOCK_WEIGHT 67
