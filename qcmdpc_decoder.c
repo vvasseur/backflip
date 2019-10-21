@@ -137,7 +137,7 @@ int main(int argc, char *argv[]) {
 #if !OUROBOROS
         sparse_t e2_block = NULL;
 #else
-        sparst_t e2_block = sparse_new(ERROR_WEIGHT / 2);
+        sparse_t e2_block = sparse_new(ERROR_WEIGHT / 2);
 #endif
 
         struct decoder dec;
