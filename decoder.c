@@ -287,7 +287,8 @@ int qcmdpc_decode_ttl(decoder_t dec, int max_iter) {
                     single_flip(dec->Hcolumns[k], j, dec->syndrome);
                     dec->bits[k][j] ^= 1;
                     dec->syndrome_weight += BLOCK_WEIGHT - 2 * counter;
-                    // dec->error_weight += 2 * (bits[k][j] ^ dec->e[k][j]) - 1;
+                    // dec->error_weight += 2 * (dec->bits[k][j] ^ dec->e[k][j])
+                    // - 1;
                 }
             }
         }
@@ -308,7 +309,8 @@ int qcmdpc_decode_ttl(decoder_t dec, int max_iter) {
                     single_flip(dec->Hcolumns[k], j, dec->syndrome);
                     dec->bits[k][j] ^= 1;
                     dec->syndrome_weight += BLOCK_WEIGHT - 2 * counter;
-                    // dec->error_weight += 2 * (bits[k][j] ^ dec->e[k][j]) - 1;
+                    // dec->error_weight += 2 * (dec->bits[k][j] ^ dec->e[k][j])
+                    // - 1;
                     recompute_threshold = 1;
 
                     fl_remove(dec->fl, fl_pos);
