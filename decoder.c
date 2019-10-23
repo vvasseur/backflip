@@ -130,11 +130,11 @@ void init_decoder_error(decoder_t dec, sparse_t *Hcolumns,
         index_t j = e_block[k];
         if (j >= BLOCK_LENGTH)
             break;
-        dec->e[e_block[k] / BLOCK_LENGTH][j] = 1;
+        dec->e[0][j] = 1;
     }
     for (; k < ERROR_WEIGHT; ++k) {
         index_t j = e_block[k] - BLOCK_LENGTH;
-        dec->e[e_block[k] / BLOCK_LENGTH][j] = 1;
+        dec->e[1][j] = 1;
     }
     compute_syndrome(dec);
 
