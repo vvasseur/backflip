@@ -5,6 +5,7 @@ This is an implementation of the Backflip QC-MDPC decoder.
 The Backflip algorithm relies on a ttl function that depends on the code
 parameters, this program can be used to determine this function.
 
+**Please use [this more up-to-date implementation which also includes other algorithms](https://github.com/vvasseur/qcmdpc_decoder) instead**.
 
 ## Usage
 
